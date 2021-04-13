@@ -27,12 +27,13 @@ parameter|sceptre_user_data:
 parameter|sceptre_user_data:
   <name>: !ssm
     name: /prefix/param
+    region: us-east-1
     profile: OtherAccount
 ```
 
 ```yaml
 parameter|sceptre_user_data:
-  <name>: !ssm {"name": "/prefix/param", "profile": "OtherAccount"}
+  <name>: !ssm {"name": "/prefix/param", "region": "us-east-1", "profile": "OtherAccount"}
 ```
 
 
